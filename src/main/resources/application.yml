@@ -4,8 +4,8 @@ server:
 ## Configuracion clasica de Eureka
 eureka:
   instance:
-    preferIpAddress: true
-    hostname: localhost
+    preferIpAddress: false
+    hostname: back-end-cloud-gateway.up.railway.app
     non-secure-port-enabled: true
     secure-port-enabled: false
     non-secure-port: 80
