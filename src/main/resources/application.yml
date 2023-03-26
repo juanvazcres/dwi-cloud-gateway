@@ -5,7 +5,7 @@ server:
 eureka:
   instance:
     preferIpAddress: false
-    hostname: back-end-cloud-gateway.up.railway.app
+    hostname: ${HOSTNAME:localhost}
     
   client:
     registerWithEureka: true
