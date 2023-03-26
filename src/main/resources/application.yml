@@ -28,7 +28,8 @@ spring:
       globalcors: ## Configuracion de CORS a nivel Gateway
         cors-configurations:
           '[/**]': ## Para todas las rutas
-            allowedOrigins: https://front-end-pizza-test.vercel.app ## Si ponemos '*' permitimos todos los origenes. Podemos restringir indicando dominios o ip + puerto, p.ej http://localhost:3000 (donde esta nuestro front)
+            allowedOrigins: "https://front-end-pizza-test.vercel.app" ## Si ponemos '*' permitimos todos los origenes. Podemos restringir indicando dominios o ip + puerto, p.ej http://localhost:3000 (donde esta nuestro front)
+            allowedHeaders: "*"
             allowedMethods:
             - GET
             - POST
