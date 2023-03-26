@@ -5,7 +5,7 @@ server:
 eureka:
   instance:
     preferIpAddress: true
-    hostname: back-end-cloud-gateway.up.railway.app
+    hostname: localhost
     non-secure-port-enabled: true
     secure-port-enabled: false
     non-secure-port: 80
