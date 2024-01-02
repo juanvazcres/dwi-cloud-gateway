@@ -4,7 +4,7 @@ server:
 ## Configuracion clasica de Eureka
 eureka:
   instance:
-    preferIpAddress: true ## Se mantiene a true para reflejar la diferencia con false cuando veamos la lista de aplicaciones de Eureka
+    preferIpAddress: true # Se mantiene a true para reflejar la diferencia con false cuando veamos la lista de aplicaciones de Eureka
     hostname: ${HOSTNAME:localhost}
     
   client:
@@ -30,8 +30,8 @@ spring:
       globalcors: ## Configuracion de CORS a nivel Gateway
         cors-configurations:
           '[/**]': ## Para todas las rutas
-            allowedOrigins: ${ALLOWED_ORIGINS:*} ## Si ponemos '*' permitimos todos los origenes. Podemos restringir indicando dominios o ip + puerto, p.ej http://localhost:3000 (donde esta nuestro front, o un dominio de Vercel)
-            allowedHeaders: "*"
+            allowedOrigins: ${ALLOWED_ORIGINS:*} # Si ponemos '*' permitimos todos los origenes. Podemos restringir indicando dominios o ip + puerto, p.ej http://localhost:3000 (donde esta nuestro front, o un dominio de Vercel)
+            allowedHeaders: "*" ## Permitimos todos los headers
             allowedMethods:
             - GET
             - POST
