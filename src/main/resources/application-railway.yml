@@ -2,3 +2,6 @@
 eureka:
   instance:
     preferIpAddress: true
+
+server:
+  port: 3000
