@@ -40,7 +40,7 @@ spring:
             - PATCH
       
 
-## Habilitamos la API Actuator para poder acceder a /actuator/gateway/routes
+## Habilitamos la API Actuator para poder acceder a <<host>>/actuator/gateway/routes
 ## Exponemos los routings que se han detectado automáticamente (todos)
 management:
   endpoint:
