@@ -42,10 +42,11 @@ spring:
 
 ## Habilitamos la API Actuator para poder acceder a <<host>>/actuator/gateway/routes
 ## Exponemos los routings que se han detectado automáticamente (todos)
+## En funcion de la variable de entorno ROUTE_TABLES_ENABLED (por defecto true)
 management:
   endpoint:
     gateway:  
-      enabled: true
+      enabled: ${ROUTE_TABLES_ENABLED:true}
   endpoints:
     web:
       exposure:
