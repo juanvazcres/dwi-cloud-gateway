@@ -5,13 +5,13 @@ server:
 eureka:
   instance:
     preferIpAddress: true
-    hostname: ${HOSTNAME:localhost}
+    hostname: ${HOSTNAME:dwi-cloud-gateway.railway.internal}
     
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}
+      defaultZone: ${EUREKA_URL:http://dwi-eureka.railway.internal:8761/eureka}
       
 
 ## Enable service discovery (with Eureka)
